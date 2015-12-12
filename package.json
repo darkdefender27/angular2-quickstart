@@ -4,14 +4,15 @@
   "description": "Angular 2 boiling in progress...",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "tsc": "tsc -p src -w",
+    "start": "live-server --open=src"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/darkdefender27/angular2-quickstart.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "shubhamutwal",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/darkdefender27/angular2-quickstart/issues"
