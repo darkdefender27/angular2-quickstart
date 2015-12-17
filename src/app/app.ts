@@ -1,8 +1,9 @@
-import {bootstrap, Component, NgFor, NgModel} from 'angular2/angular2';
+import {bootstrap, Component, NgFor, FORM_DIRECTIVES} from 'angular2/angular2';
 import {Hero} from './hero';
 
 @Component({
     selector: 'my-app',
+    directives: [NgFor, FORM_DIRECTIVES],
     template: `
     <h1>{{ title }}</h1> 
     <h2>Hero Details: </h2>
@@ -17,19 +18,19 @@ import {Hero} from './hero';
       </li>
     </ul>
     <div>
-        <label>Name: </label>
+        <label>Input Hero: </label>
         <div>
-            <input  placeholder="name">
+            <input type="text"  [(ng-model)]="myHero.name" placeholder="name"> 
         </div>
     </div>
-    
-    `,
-    directives: [NgFor, NgModel]
+    `
 })
 export class AppComponent {
-    title: string;
-    myHero: Hero;
-    heroes: Hero [];
+    todoModel;
+    
+    public title: string;
+    public myHero: Hero;
+    public heroes: Hero [];
     
     constructor() {
         this.title = 'Title of Heroes';
