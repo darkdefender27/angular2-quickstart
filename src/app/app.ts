@@ -9,7 +9,6 @@ import {Hero} from './hero';
     <h2>Hero Details: </h2>
     <div>
         <h4>Hero Name: {{ myHero.name }}</h4>
-        <h4>Hero ID Num: {{ myHero.id }}</h4>
     </div>
     <p>Other Heroes:</p>
     <ul>
