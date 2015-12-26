@@ -1,0 +1,17 @@
+<h1>{{ title }}</h1> 
+<h2>Hero Details: </h2>
+<div>
+	<h4>Hero Name: {{ myHero.name }}</h4>
+</div>
+<p>Other Heroes:</p>
+<ul>
+	<li *ng-for="#hero of heroes">
+	{{ hero.name }}
+	</li>
+</ul>
+<div>
+	<label>Input Hero: </label>
+	<div>
+		<input type="text"  [(ng-model)]="myHero.name" placeholder="name"> 
+	</div>
+</div>

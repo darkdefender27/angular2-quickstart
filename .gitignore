@@ -20,5 +20,4 @@ angular.xcodeproj
 .agignore
 .lvimrc
 libpeerconnection.log
-/src/app/*.js
-/src/app/*.js.map
+/src/webapp/build/*

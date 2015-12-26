@@ -4,7 +4,7 @@
   "description": "Angular 2 boiling in progress...",
   "main": "index.js",
   "scripts": {
-    "tsc": "tsc -p src -w",
+    "tsc": "tsc -p src -w -outDir src/webapp/build/js",
     "start": "live-server --open=src"
   },
   "repository": {
