@@ -1,5 +1,7 @@
-import {bootstrap, Component, NgFor, FORM_DIRECTIVES} from 'angular2/angular2';
+import {Component} from 'angular2/core';
+import {FORM_DIRECTIVES, NgFor} from 'angular2/common'
 import {Hero} from './shared/models/hero';
+import {bootstrap} from 'angular2/platform/browser'
 
 @Component({
     selector: 'my-app',
